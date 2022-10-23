@@ -3,10 +3,10 @@ depth_feat_model_ckpt: 3d-photo-inpainting/checkpoints/depth-model.pth
 rgb_feat_model_ckpt: 3d-photo-inpainting/checkpoints/color-model.pth
 MiDaS_model_ckpt: 3d-photo-inpainting/MiDaS/model.pt
 use_boostmonodepth: False
-fps: 12
+fps: 10
 num_frames: 4
 x_shift_range: [0.00, 0.00, 0.00, 0.00]
-y_shift_range: [0.00, -0.003, -0.0065, -0.002]
+y_shift_range: [0.00, -0.003, -0.0045, -0.002]
 z_shift_range: [0.00, 0.0005, 0.003, 0.001]
 traj_types: ['double-straight-line']
 video_postfix: ['dolly-downshift-in']
@@ -21,7 +21,7 @@ save_ply: True
 inference_video: True
 gpu_ids: 0
 offscreen_rendering: False
-img_format: '.jpeg'
+img_format: '.jpg'
 depth_format: '.npy'
 require_midas: True
 depth_threshold: 0.04
