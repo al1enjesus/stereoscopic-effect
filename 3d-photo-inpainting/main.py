@@ -29,6 +29,7 @@ args = parser.parse_args()
 config = yaml.full_load(open(args.config, 'r'))
 if config['offscreen_rendering'] is True:
     vispy.use(app='egl')
+
 os.makedirs(config['mesh_folder'], exist_ok=True)
 os.makedirs(config['video_folder'], exist_ok=True)
 os.makedirs(config['depth_folder'], exist_ok=True)
@@ -41,7 +42,6 @@ else:
     device = "cpu"
 
 print(f"running on device {device}")
-
 for idx in tqdm(range(len(sample_list))):
     depth = None
     sample = sample_list[idx]

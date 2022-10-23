@@ -1,7 +1,7 @@
-depth_edge_model_ckpt: checkpoints/edge-model.pth
-depth_feat_model_ckpt: checkpoints/depth-model.pth
-rgb_feat_model_ckpt: checkpoints/color-model.pth
-MiDaS_model_ckpt: MiDaS/model.pt
+depth_edge_model_ckpt: 3d-photo-inpainting/checkpoints/edge-model.pth
+depth_feat_model_ckpt: 3d-photo-inpainting/checkpoints/depth-model.pth
+rgb_feat_model_ckpt: 3d-photo-inpainting/checkpoints/color-model.pth
+MiDaS_model_ckpt: 3d-photo-inpainting/MiDaS/model.pt
 use_boostmonodepth: False
 fps: 12
 num_frames: 4
@@ -12,10 +12,10 @@ traj_types: ['double-straight-line']
 video_postfix: ['dolly-downshift-in']
 specific: ''
 longer_side_len: 960
-src_folder: image
-depth_folder: depth
-mesh_folder: mesh
-video_folder: video
+src_folder: 3d-photo-inpainting/image
+depth_folder: 3d-photo-inpainting/depth
+mesh_folder: 3d-photo-inpainting/mesh
+video_folder: 3d-photo-inpainting/video
 load_ply: False
 save_ply: True
 inference_video: True
