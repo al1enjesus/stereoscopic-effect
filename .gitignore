@@ -1,0 +1,9 @@
+# Models
+3d-photo-inpainting/checkpoints/*
+3d-photo-inpainting/MiDaS/model.pt
+3d-photo-inpainting/BoostingMonocularDepth/*
+# Cache
+**/__pycache__/
+# Files
+**.ply
+**.npy
