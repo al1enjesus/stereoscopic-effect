@@ -2,12 +2,12 @@ depth_edge_model_ckpt: 3d-photo-inpainting/checkpoints/edge-model.pth
 depth_feat_model_ckpt: 3d-photo-inpainting/checkpoints/depth-model.pth
 rgb_feat_model_ckpt: 3d-photo-inpainting/checkpoints/color-model.pth
 MiDaS_model_ckpt: 3d-photo-inpainting/MiDaS/model.pt
-use_boostmonodepth: False
+use_boostmonodepth: True
 fps: 10
 num_frames: 4
 x_shift_range: [0.00, 0.00, 0.00, 0.00]
-y_shift_range: [0.00, -0.003, -0.0045, -0.002]
-z_shift_range: [0.00, 0.0005, 0.003, 0.001]
+y_shift_range: [0.0075, 0.00375, 0.0, 0.00375]
+z_shift_range: [0.0075, 0.0025, 0.0, 0.0025]
 traj_types: ['double-straight-line']
 video_postfix: ['dolly-downshift-in']
 specific: ''
